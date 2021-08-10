@@ -13,9 +13,14 @@
   align-items: center;
   justify-content: center;
 
-  transition: filter 0.2s;
+  transition: filter 0.2s linear;
 
   &:hover {
     filter: brightness(0.8);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
   }
 }
